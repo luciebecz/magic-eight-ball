@@ -13,9 +13,12 @@ def answer
     when 'add'
       all_answers
     else 
-    @answer_value = ['Yes', 'No', 'Concentrate and ask again', 'Ask again later', 'Future Unknown', 'Absolutely', 'Unknown']
+    @answer_value = ['Yes', 'No', 'Concentrate and ask again', 'Ask again later', 'Future Unknown', 'Absolutely', 'Unknown','Possibly', 'Who knows', 'I am not a fortune teller', 'Sure', 'No way!', 'Hell yeah', 'Of course, girl', 'Why are you questioning that?', 'What makes you think I know the answer to that?']
     @answer_value.sample 
-    puts "Magic Eight Ball says '#{@answer_value.sample}'"
+    puts "Magic Eight Ball says.."
+    sleep(1.5)
+    puts "#{@answer_value.sample}"
+    sleep(3)
     menu
   end
 end
@@ -25,7 +28,7 @@ def exit_prog
   exit(0)
 end
 
-@answer_value2 = ['Yes', 'No', 'Concentrate and ask again', 'Ask again later', 'Future Unknown', 'Absolutely', 'Unknown']
+@answer_value2 = ['Yes', 'No', 'Concentrate and ask again', 'Ask again later', 'Future Unknown', 'Absolutely', 'Unknown','Possibly', 'Who knows', 'I am not a fortune teller', 'Sure', 'No way!', 'Hell yeah', 'Of course, girl', 'Why are you questioning that?', 'What makes you think I know the answer to that?']
 def all_answers
   puts 'Add your answer here'
   user_input = gets.chomp
